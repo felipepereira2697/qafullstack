@@ -13,3 +13,12 @@ def forNTimes
 end
 
 forNTimes
+
+#Arrays
+avengers = ['Cap America', 'Spider-man', 'Thor']
+puts avengers.class
+
+#foreach
+avengers.each do |a|
+    puts 'Avenger --> ' + a
+end

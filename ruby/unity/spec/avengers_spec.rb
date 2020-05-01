@@ -62,7 +62,7 @@ describe AvengersHeadQuarter do
 
         #RegEx
         expect(avengerFullName).to match(/Rogers/)
-        expect(avengerFullName).not_to match(/Stark/)
+        expect(avengerFullName).to_not match(/Stark/)
          
 
     end

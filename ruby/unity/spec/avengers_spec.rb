@@ -55,7 +55,16 @@ describe AvengersHeadQuarter do
         hq.put('Spiderman')
 
         expect(hq.avengerList).to end_with('Spiderman')
-            
+    end
+
+    it 'Should include last name' do
+        avengerFullName = 'Steve Rogers'
+
+        #RegEx
+        expect(avengerFullName).to match(/Rogers/)
+        expect(avengerFullName).not_to match(/Stark/)
+         
+
     end
 
 

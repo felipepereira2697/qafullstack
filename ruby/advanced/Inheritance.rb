@@ -47,7 +47,7 @@ puts onix.off
 puts onix.drive
 
 
-embr3 = Airplane.new('Embr33','BREMBR','XYT-31')
+embr3 = Airplane.new('Embrs33','BREMBR','XYT-31')
 puts embr3.name 
 puts embr3.on
 puts embr3.off

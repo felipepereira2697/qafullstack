@@ -1,0 +1,5 @@
+# Here we store our project dependencies
+source "https://rubygems.org"
+
+#First I`m gonna work with the rspec gem
+gem  "rspec"

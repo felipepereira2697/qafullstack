@@ -1,5 +1,7 @@
 #PORTUGUESE EXPLANATION
 
+#BDD with Gherkin syntax
+
 Saque no Caixa Eletrônico
 Sendo um cliente que é correntista do Ninja Bank
 Posso sacar dinheiro

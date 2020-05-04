@@ -1,5 +1,5 @@
 #including our class
-require_relative '../app/Bank.rb'
+require_relative '../../app/Bank.rb'
 #TEST SUITE
 describe RegularAccount do
     

@@ -11,7 +11,7 @@ describe SavingAccount do
             @savingAcc.withdraw(200.00)
         end
         it 'update amount' do
-            expect(@savingAcc.amount).to eql(800.00)
+            expect(@savingAcc.amount).to eql(780.00)
         end
        end
        context 'When the value is insufficient' do

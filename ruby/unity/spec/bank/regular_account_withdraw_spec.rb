@@ -11,7 +11,7 @@ describe RegularAccount do
             @acc.withdraw(200.00)
         end
         it 'update amount' do
-            expect(@acc.amount).to eql(800.00)
+            expect(@acc.amount).to eql(790.00)
         end
        end
        context 'When the value is insufficient' do

@@ -3,8 +3,10 @@ describe 'Automated Script' do
     
     #test case block
     it 'Go to webpage' do
-        puts 'going to webpage'
-
+        #Visit is capybara method
+        visit "https://training-wheels-protocol.herokuapp.com/"
+        #page title is from capybara but expect is from rspec
+        puts expect(page.title).to eql 'Training Wheels Protocol'
     end
 
 end

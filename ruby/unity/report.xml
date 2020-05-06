@@ -1,0 +1,21 @@
+<!--Compatible with Jenkins, CircleCI-->
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="14" skipped="0" failures="0" errors="0" time="0.013710" timestamp="2020-05-03T22:02:26-03:00" hostname="Felipes-MBP">
+<properties>
+<property name="seed" value="32935"/>
+</properties>
+<testcase classname="spec.avengers_spec" name="AvengersHeadQuarter Should add an Avenger" file="./spec/avengers_spec.rb" time="0.001807"></testcase>
+<testcase classname="spec.avengers_spec" name="AvengersHeadQuarter Should add an Avengers List" file="./spec/avengers_spec.rb" time="0.002415"></testcase>
+<testcase classname="spec.avengers_spec" name="AvengersHeadQuarter Cap America should be the first one" file="./spec/avengers_spec.rb" time="0.001199"></testcase>
+<testcase classname="spec.avengers_spec" name="AvengersHeadQuarter Spiderman should be the last one" file="./spec/avengers_spec.rb" time="0.000102"></testcase>
+<testcase classname="spec.avengers_spec" name="AvengersHeadQuarter Should include last name" file="./spec/avengers_spec.rb" time="0.001010"></testcase>
+<testcase classname="spec.bank.regular_account_withdraw_spec" name="RegularAccount Withdraw When the value is positive update amount" file="./spec/bank/regular_account_withdraw_spec.rb" time="0.000064"></testcase>
+<testcase classname="spec.bank.regular_account_withdraw_spec" name="RegularAccount Withdraw When the value is insufficient notify user of insufficient value" file="./spec/bank/regular_account_withdraw_spec.rb" time="0.000051"></testcase>
+<testcase classname="spec.bank.regular_account_withdraw_spec" name="RegularAccount Withdraw when the value is bigger than allowed per transaction notify user that can only take 200 per transaction" file="./spec/bank/regular_account_withdraw_spec.rb" time="0.000095"></testcase>
+<testcase classname="spec.bank.saving_account_withdraw_spec" name="SavingAccount Withdraw When the value is positive update amount" file="./spec/bank/saving_account_withdraw_spec.rb" time="0.000053"></testcase>
+<testcase classname="spec.bank.saving_account_withdraw_spec" name="SavingAccount Withdraw When the value is insufficient notify user of insufficient value" file="./spec/bank/saving_account_withdraw_spec.rb" time="0.000095"></testcase>
+<testcase classname="spec.bank.saving_account_withdraw_spec" name="SavingAccount Withdraw when the value is bigger than allowed per transaction notify user that can only take 200 per transaction" file="./spec/bank/saving_account_withdraw_spec.rb" time="0.000081"></testcase>
+<testcase classname="spec.examples_spec" name="rspec suites sum of two values" file="./spec/examples_spec.rb" time="0.000049"></testcase>
+<testcase classname="spec.matchers_spec" name="Matchers Are the numbers the same?" file="./spec/matchers_spec.rb" time="0.000767"></testcase>
+<testcase classname="spec.matchers_spec" name="Matchers Array matchers" file="./spec/matchers_spec.rb" time="0.002457"></testcase>
+</testsuite>

@@ -10,6 +10,10 @@ describe 'Testing Forms' do
 
         #find element that contains flash id and also checks to see if its visible
         expect(find('#flash').visible?).to be true
+        expect(find('#flash').text).to include 'Olá, Tony Stark. Você acessou a área logada!'
+
+        #Better way to do it --> this is from CAPYBARA not from RSpec
+        expect(find('#flash')).to have_content 'Olá, Tony Stark. Você acessou a área logada!'
     end
 
 end

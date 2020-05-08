@@ -21,7 +21,7 @@ describe 'Dropdown', :dropdown do
         #go to the options of that dropdown and look for an option that has Bruce Banner as value
         #then, select that option
         dropdown.find('option', text: 'Bruce Banner').select_option
-        sleep 3
+        sleep 5
 
     end
 

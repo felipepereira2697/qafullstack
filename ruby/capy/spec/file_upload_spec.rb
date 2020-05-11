@@ -22,7 +22,6 @@ describe 'File upload', :upload do
     it 'Testing image file upload' do
         attach_file('file-upload', @imgPath)
         click_button 'Upload'
-        sleep 5
         img = find('#new-image')
         #Since find('#new-image') returns basically the element, we can access its html attributes
         expect(img[:src]).to include 'star_8bit.jpg'

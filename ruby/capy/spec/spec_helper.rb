@@ -22,5 +22,7 @@ end
 #Capybara project to be executed by Google Chrome
 Capybara.configure do |config|
   config.default_driver = :selenium_chrome
+  #We have until 5 seconds to find an element
+  config.default_max_wait_time = 5
 
 end

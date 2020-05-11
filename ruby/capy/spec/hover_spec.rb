@@ -17,4 +17,20 @@ describe 'Testing Hovers', :hover do
 
         expect(page).to have_content 'Nome: Homem Aranha'
     end
+
+    it 'Should test html hover for image elements that starts with Homem' do
+        #Since contain white spaces (special characters) the parameters must be in double quotes
+        card = find('img[alt*=Homem]')
+        card.hover
+
+        expect(page).to have_content 'Nome: Homem Aranha'
+    end
+
+    it 'Should test html hover for image elements that ends with Aranha' do
+        #Since contain white spaces (special characters) the parameters must be in double quotes
+        card = find('img[alt$=Aranha]')
+        card.hover
+
+        expect(page).to have_content 'Nome: Homem Aranha'
+    end
 end

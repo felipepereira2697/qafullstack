@@ -17,13 +17,22 @@ describe 'Scope login', :scope_login do
 
         #Using Capybara within method
         within('#login') do
-            login_form.find('input[name=username').set 'stark'
-            login_form.find('input[name=password').set 'jarvis!'
+            find('input[name=username').set 'stark'
+            find('input[name=password').set 'jarvis!'
             click_button 'Entrar'
         end
-        
         sleep 3
         expect(find('#flash')).to have_content 'Olá, Tony Stark. Você acessou a área logada!'
+    end
+
+    it 'Sign up' do
+        within('#signup') do
+            find('input[name=username').set 'arya'
+            find('input[name=password').set '123!'
+            click_link 'Criar Conta'
+        end
+        sleep 3
+        expect(page).to have_content 'Dados enviados. Aguarde aprovação do seu cadastro'
     end
 
     

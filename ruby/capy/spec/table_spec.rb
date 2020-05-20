@@ -16,4 +16,10 @@ describe 'Testing tables', :table do
         
         expect(blackPanther.text).to include '700.000'
     end
+
+    #Another way
+    it 'Chris Evans Salary' do
+        capAmerica = find('table tbody tr', text: '@teamcevans')
+        expect(capAmerica.text).to include '7.000.000'
+    end
 end

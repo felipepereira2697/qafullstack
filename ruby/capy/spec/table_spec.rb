@@ -22,4 +22,21 @@ describe 'Testing tables', :table do
         capAmerica = find('table tbody tr', text: '@teamcevans')
         expect(capAmerica.text).to include '7.000.000'
     end
+
+    it 'Vin Diesel - Fast and Furious movie' do
+        vinDiesel = find('table tbody tr', text: '@vindiesel')
+
+        #returning all columns
+        movie = vinDiesel.all('td')[2].text
+
+        expect(movie).to eql 'Velozes e Furiosos'
+    end
+
+    it 'Removing Chris Pratt' do
+        starLord = find('table tbody tr', text: 'Chris Pratt')
+        starLord.find('a', text: 'delete').click
+        msg = page.driver.browser.switch_to.alert.text
+        expect(msg).to eql 'Chris Pratt foi selecionado para remoção!'
+    end
+
 end

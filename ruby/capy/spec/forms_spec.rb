@@ -1,6 +1,6 @@
 describe 'Testing Forms' do
     it 'successful login' do
-        visit 'https://training-wheels-protocol.herokuapp.com/login'
+        visit '/login'
 
         #Look for an element with name or id username and fill it with stark
         fill_in 'username', with: 'stark'

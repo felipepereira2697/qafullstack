@@ -3,7 +3,7 @@ describe 'Checkboxes', :checkbox do
     #Check and Uncheck methods works for names and Ids
     before(:each) do
 
-        visit 'https://training-wheels-protocol.herokuapp.com/checkboxes'
+        visit '/checkboxes'
 
     end
     it 'Checking option' do

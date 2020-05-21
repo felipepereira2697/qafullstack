@@ -1,7 +1,7 @@
 describe 'Login Random Forms', :random_login do
 
     before(:each) do
-        visit 'https://training-wheels-protocol.herokuapp.com/login2'
+        visit '/login2'
     end
     it 'successful birth date login' do
         

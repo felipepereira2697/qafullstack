@@ -1,7 +1,7 @@
 describe 'Keyboard testing', :keyboard do
     
     before(:each) do
-        visit 'https://training-wheels-protocol.herokuapp.com/key_presses'
+        visit '/key_presses'
     end
     it 'Space Key simulator' do
         find('#campo-id').send_keys :space

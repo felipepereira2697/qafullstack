@@ -2,7 +2,7 @@ describe 'File upload', :upload do
     
     before(:each) do
         
-        visit 'https://training-wheels-protocol.herokuapp.com/upload'
+        visit '/upload'
         @filePath = Dir.pwd + '/spec/fixtures/file.txt'
         @imgPath = Dir.pwd + '/spec/fixtures/star_8bit.jpg'
 

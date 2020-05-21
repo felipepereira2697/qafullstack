@@ -1,7 +1,7 @@
 describe 'Scope login', :scope_login do
 
     before(:each) do
-        visit 'https://training-wheels-protocol.herokuapp.com/access'
+        visit '/access'
     end
     it 'Successful login' do
         # Since we have two elements with input username and password we need to differ, one way to do it

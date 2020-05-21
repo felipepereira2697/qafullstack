@@ -1,7 +1,7 @@
 describe 'Testing Hovers', :hover do
     
     before(:each) do
-        visit 'https://training-wheels-protocol.herokuapp.com/hovers'
+        visit '/hovers'
     end
     it 'Should test html hover for Blade' do
         card = find('img[alt=Blade]')

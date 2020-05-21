@@ -2,7 +2,7 @@ describe 'Testing iframes' do
     
     describe 'Good iframe', :good_iframe do
         before(:each) do
-            visit 'https://training-wheels-protocol.herokuapp.com/nice_iframe'
+            visit '/nice_iframe'
         end
         it 'Testing good iframe' do
             # We can work inside an iframe using capybara method within_frame
@@ -18,7 +18,7 @@ describe 'Testing iframes' do
 
     describe 'Bad iframe', :bad_iframe do
         before(:each) do
-            visit 'https://training-wheels-protocol.herokuapp.com/bad_iframe'
+            visit '/bad_iframe'
         end
         it 'Cart should be empty' do
             # Since the bad iframe does not have an id we must add an id in order to test it

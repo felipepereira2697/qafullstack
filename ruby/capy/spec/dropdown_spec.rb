@@ -3,7 +3,7 @@
 describe 'Dropdown', :dropdown do
     
     it 'testing dropdown element, selecting an element' do
-        visit 'https://training-wheels-protocol.herokuapp.com/dropdown'
+        visit '/dropdown'
 
         # dropdown is the id of the element
         #WARNING: These option only works for elements that has ids
@@ -13,7 +13,7 @@ describe 'Dropdown', :dropdown do
     end
 
     it 'using find to locate specific item' do
-        visit 'https://training-wheels-protocol.herokuapp.com/dropdown'
+        visit '/dropdown'
 
         #Using CSS Selector instead
         dropdown = find('.avenger-list')
@@ -27,7 +27,7 @@ describe 'Dropdown', :dropdown do
 
     it 'random option', :sample do
         
-        visit 'https://training-wheels-protocol.herokuapp.com/dropdown'
+        visit '/dropdown'
 
         #Using CSS Selector instead
         dropdown = find('.avenger-list')

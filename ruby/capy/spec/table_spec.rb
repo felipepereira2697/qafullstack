@@ -1,7 +1,7 @@
 describe 'Testing tables', :table do
     
     before(:each) do
-        visit 'https://training-wheels-protocol.herokuapp.com/tables'
+        visit '/tables'
     end
     it 'Chadwick Boseman Salary' do
         # get all rows but find should return ONLY ONE ELEMENT

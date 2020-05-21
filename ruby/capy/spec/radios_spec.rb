@@ -1,7 +1,7 @@
 describe 'Testing radio buttons', :radio do
     
     before(:each) do
-        visit 'https://training-wheels-protocol.herokuapp.com/radios'
+        visit '/radios'
     end
 
     it 'Selecting radio button by id' do

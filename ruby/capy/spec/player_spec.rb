@@ -1,6 +1,5 @@
 #test suite block
-describe 'Automated Script' do
-    
+describe 'Automated Script', :autoScript do
     #test case block
     it 'Go to webpage' do
         #Visit is capybara method

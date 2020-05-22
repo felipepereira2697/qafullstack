@@ -17,6 +17,11 @@ RSpec.configure do |config|
 
   config.include Capybara::DSL
 
+  config.before(:example) do
+    #For all test cases we resize our window to 1200 x 800 
+    page.current_window.resize_to(1200,800)
+  end
+
 end
 
 #Capybara project to be executed by Google Chrome

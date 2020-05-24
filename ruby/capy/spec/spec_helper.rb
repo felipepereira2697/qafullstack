@@ -25,12 +25,14 @@ RSpec.configure do |config|
   config.after(:example) do |scenario|
       scenarioName =  scenario.description.tr(' ', '_')
       #Save screenshot
-      page.save_screenshot('log/'+ scenarioName +'.png')
+      page.save_screenshot('log/'+ scenarioName +'.png') #if scenario.exception
   end
 end
 
 #Capybara project to be executed by Google Chrome
 Capybara.configure do |config|
+  #In order to not load chrome everytime we execute we can use selenium_chrome_headless 
+  #config.default_driver = :selenium_chrome_headless
   config.default_driver = :selenium_chrome
   #We have until 5 seconds to find an element
   config.default_max_wait_time = 5

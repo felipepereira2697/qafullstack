@@ -21,7 +21,12 @@ RSpec.configure do |config|
     #For all test cases we resize our window to 1200 x 800 
     page.current_window.resize_to(1200,800)
   end
-
+  #Everytime we run a test it will trigger a screenshot
+  config.after(:example) do |scenario|
+      scenarioName =  scenario.description.tr(' ', '_')
+      #Save screenshot
+      page.save_screenshot('log/'+ scenarioName +'.png')
+  end
 end
 
 #Capybara project to be executed by Google Chrome

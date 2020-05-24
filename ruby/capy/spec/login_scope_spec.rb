@@ -33,8 +33,6 @@ describe 'Scope login', :scope_login do
         end
         sleep 3
         expect(page).to have_content 'Dados enviados. Aguarde aprovação do seu cadastro'
-    end
-
-    
+    end 
 
 end
